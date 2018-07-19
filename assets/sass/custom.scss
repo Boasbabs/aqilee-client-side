@@ -1,0 +1,199 @@
+/*-------------------
+    Aquilee Custom Reusable CSS
+--------------------*/
+
+body {
+  font-family: $font-primary !important;
+  font-weight: normal;
+  font-size: 14px;
+  background-color: $offWhiteColor;
+
+  line-height: 1.7;
+
+}
+.primary-color {
+  color: $primaryColor !important;
+}
+.secondary-color {
+  color: $secondaryColor!important;
+}
+.white-color {
+  color: $whiteColor !important;
+}
+.primary-color-bg {
+  background-color: $primaryColor !important;
+}
+.secondary-color-bg {
+  background-color: $secondaryColor!important;
+}
+.white-color-bg {
+  background-color: $whiteColor !important;
+}
+.dark-color-bg {
+  background-color:$tertiaryColor !important;
+}
+// Mixins ==================================
+
+@mixin breakpoint($point) {
+  @if $point == md-mobile {
+    @media (max-width: 580px) {
+      @content
+    }
+  }
+  @if $point == sm-mobile {
+    @media (max-width: 480px) {
+      @content
+    }
+  }
+}
+
+
+
+// MARGIN ==================================
+
+
+.marginright-1 {
+  margin-right: 1rem !important; }
+
+.marginright-2 {
+  margin-right: 2rem !important; }
+
+.marginright-3 {
+  margin-right: 3rem !important; }
+
+.marginright-4 {
+  margin-right: 4rem !important; }
+
+.marginright-5 {
+  margin-right: 5rem !important; }
+
+.marginright-6 {
+  margin-right: 6rem !important; }
+
+.marginleft-1 {
+  margin-left: 1rem !important; }
+
+.marginleft-2 {
+  margin-left: 2rem !important; }
+
+.marginleft-3 {
+  margin-left: 3rem !important; }
+
+.marginleft-4 {
+  margin-left: 4rem !important; }
+
+.marginleft-5 {
+  margin-left: 5rem !important; }
+
+.marginleft-6 {
+  margin-left: 6rem !important; }
+
+.margintop-1 {
+  margin-top: 1rem !important; }
+
+.margintop-2 {
+  margin-top: 2rem !important; }
+
+.margintop-3 {
+  margin-top: 3rem !important; }
+
+.margintop-4 {
+  margin-top: 4rem !important; }
+
+.margintop-5 {
+  margin-top: 5rem !important; }
+
+.margintop-6 {
+  margin-top: 6rem !important; }
+
+.marginbottom-1 {
+  margin-bottom: 1rem !important; }
+
+.marginbottom-2 {
+  margin-bottom: 2rem !important; }
+
+.marginbottom-3 {
+  margin-bottom: 3rem !important; }
+
+.marginbottom-4 {
+  margin-bottom: 4rem !important; }
+
+.marginbottom-5 {
+  margin-bottom: 5rem !important; }
+
+.marginbottom-6 {
+  margin-bottom: 6rem !important; }
+
+// PADDING ================================
+
+.padright-1 {
+  padding-right: 1rem !important; }
+
+.padright-2 {
+  padding-right: 2rem !important; }
+
+.padright-3 {
+  padding-right: 3rem !important; }
+
+.padright-4 {
+  padding-right: 4rem !important; }
+
+.padright-5 {
+  padding-right: 5rem !important; }
+
+.padright-6 {
+  padding-right: 6rem !important; }
+
+.padleft-1 {
+  padding-left: 1rem !important; }
+
+.padleft-2 {
+  padding-left: 2rem !important; }
+
+.padleft-3 {
+  padding-left: 3rem !important; }
+
+.padleft-4 {
+  padding-left: 4rem !important; }
+
+.padleft-5 {
+  padding-left: 5rem !important; }
+
+.padleft-6 {
+  padding-left: 6rem !important; }
+
+.padtop-1 {
+  padding-top: 1rem !important; }
+
+.padtop-2 {
+  padding-top: 2rem !important; }
+
+.padtop-3 {
+  padding-top: 3rem !important; }
+
+.padtop-4 {
+  padding-top: 4rem !important; }
+
+.padtop-5 {
+  padding-top: 5rem !important; }
+
+.padtop-6 {
+  padding-top: 6rem !important; }
+
+.padbottom-1 {
+  padding-bottom: 1rem !important; }
+
+.padbottom-2 {
+  padding-bottom: 2rem !important; }
+
+.padbottom-3 {
+  padding-bottom: 3rem !important; }
+
+.padbottom-4 {
+  padding-bottom: 4rem !important; }
+
+.padbottom-5 {
+  padding-bottom: 5rem !important; }
+
+.padbottom-6 {
+  padding-bottom: 6rem !important; }
