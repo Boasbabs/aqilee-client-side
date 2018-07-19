@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Insurance fraud detection">
+    <meta name="keywords" content="Insurance, Fraud, Africa, Claims, Aqilee">
+
+    <title>Aqilee - Fraud Detection and Risk Assessment software for Insurers</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Navigation -->
+<header class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-white fixed-top">
+        <a class="navbar-brand text-dark" href="#">
+            <img src="assets/img/aqilee.png" alt="aqilee logo" class="navbar-brand__img">
+            Aqilee
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="">
+            <div class="nav-item ml-auto">
+                <a class="nav-link secondary-color" href="#">Profile</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="#">Make Claims</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="#">My Claims</a>
+            </div>
+            <div class="nav-item">
+                <button class="btn my-2 my-sm-0">Sign Out</button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h3>My Profile</h3>
+        <p class="">Your profile summary.</p>
+    </div>
+    <img alt="aqilee profile pic" class="mr-2 rounded" style="width: 150px; height: 150px;" src="assets/img/avatar1.jpeg" data-holder-rendered="true">
+    <button>change pic</button>
+    <br>
+    <div class="media pt-1">
+        <div class="media-body pb-3 mb-0 lh-125">
+            <h3 class="secondary-color">George Osodo</h3>
+            <hr class="mb-2 ">
+            <!--<div class="container">-->
+            <div class="row">
+                <div class="col-md-8 order-md-1">
+                    <h5 class="mb-2">My Biodata</h5>
+                    <form class="">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="firstName">First name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="lastName">Last name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-2">
+                                <label for="age">Date of Birth</label>
+                                <input type="date" class="form-control" id="age" placeholder="12" required="">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="occupation">Occupation</label>
+                                <input type="text" class="form-control" id="occupation" placeholder="Doctor" required="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-2">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="telephone">Telephone</label>
+                                <input type="tel" class="form-control" id="telephone" placeholder="12345211">
+                            </div>
+                        </div>
+
+                        <div class="mb-2">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                        </div>
+                        <div class="row">
+                            <div class="col-md-5 mb-2">
+                                <label for="country">Country</label>
+                                <select class="custom-select d-block w-100" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4 mb-2">
+                                <label for="state">State</label>
+                                <select class="custom-select d-block w-100" id="state" required="">
+                                    <option value="">Choose...</option>
+                                    <option>California</option>
+                                </select>
+                            </div>
+                            <div class="col-md-3 mb-2">
+                                <label for="zip">Zip</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required="">
+                            </div>
+                        </div>
+                        <div class="mb-2">
+                            <label for="address">Upload Driver's License</label>
+                            <input type="file" class="form-control" id="address" placeholder="1234 Main St" required="">
+                        </div>
+                        <hr class="mb-3">
+                        <h5 class="mb-2">My Policies</h5>
+                        <div class="row mb-4">
+                            <div class="col-md-9">
+                                <label for="country">Country</label>
+                                <select class="custom-select d-block w-100" id="country" required="">
+                                    <option value="">Choose...</option>
+                                    <option>United States</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-3">
+                                <a href="#" class="btn btn-primary btn-block mt-4">View</a>
+                            </div>
+                        </div>
+
+                        <hr class="mb-3 text-hide">
+                        <div class="row">
+                            <div class="col-md-5 mb-2">
+                                <button type="button" class="btn btn-secondary btn-lg btn-block">Cancel</button>
+                            </div>
+                            <div class="col-md-5 mb-2">
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Edit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!--</div>-->
+        </div>
+    </div>
+
+</main>
+
+
+<!-- External Scripts -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Customs Scripts -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>

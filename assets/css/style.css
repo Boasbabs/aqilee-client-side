@@ -10,6 +10,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   background-color: #f2f2f2;
+  padding-top: 5rem;
   line-height: 1.7; }
 
 .primary-color {
@@ -176,5 +177,11 @@ body {
 
 .padbottom-6 {
   padding-bottom: 6rem !important; }
+
+.starter-template {
+  padding: 1.5rem; }
+
+.navbar-brand__img {
+  width: 50px; }
 
 /*# sourceMappingURL=style.css.map */
