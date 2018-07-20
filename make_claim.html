@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Insurance fraud detection">
+    <meta name="keywords" content="Insurance, Fraud, Africa, Claims, Aqilee">
+
+    <title>Aqilee - Fraud Detection and Risk Assessment software for Insurers</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Navigation -->
+<header class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-white fixed-top">
+        <a class="navbar-brand text-dark" href="#">
+            <img src="assets/img/aqilee.png" alt="aqilee logo" class="navbar-brand__img">
+            Aqilee
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="">
+            <div class="nav-item ml-auto">
+                <a class="nav-link secondary-color" href="index.html">Profile</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="edit_profile.html">Edit Profile</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="make_claim.html">Make Claims</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="claims.html">My Claims</a>
+            </div>
+            <div class="nav-item">
+                <button class="btn my-2 my-sm-0">Sign Out</button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="container">
+
+    <div class="">
+        <h3>Make Claim</h3>
+        <p class="">Submit your new claims</p>
+    </div>
+    <div class="media">
+        <div class="media-body pb-3 mb-0 lh-125">
+            <hr class="mb-2 ">
+            <!--<div class="container">-->
+            <div class="row">
+                <div class="col-md-8 order-md-1">
+                    <h5 class="mb-2">Claim Details</h5>
+                    <form class="">
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="accidentVehicle">Accident Vehicle</label>
+                                <input type="text" class="form-control" id="accidentVehicle" placeholder="" value="" required="">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="accidentDate">Accident Date</label>
+                                <input type="text" class="form-control" id="accidentDate" placeholder="" value="" required="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-2">
+                                <label for="driverName">Drivers Name</label>
+                                <input type="text" class="form-control" id="driverName" placeholder="" required="">
+                            </div>
+                            <div class="col-md-6 mb-2">
+                                <label for="driverLicense">Driver's License</label>
+                                <input type="file" class="form-control form-control-sm" id="driverLicense" placeholder="Doctor" required="">
+                            </div>
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-2">
+                                <label for="">Third Party Involved</label> <br>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <hr class="mb-3">
+                        <h5 class="mb-2">Accident Pictures</h5>
+                        <div class="mb-2">
+                            <label for="accidentPics">Upload Accident Pictures</label>
+                            <input type="file" class="form-control" id="accidentPics" placeholder="" required="">
+                        </div>
+                        <div class="mb-2">
+
+                            <input type="file" class="form-control" id="" placeholder="" required="">
+                        </div>
+                        <div class="mb-2">
+                            <input type="file" class="form-control" id="" placeholder="" required="">
+                        </div>
+                        <hr class="mb-3">
+                        <h5 class="mb-2">Police Report</h5>
+                        <div class="mb-2">
+                            <label for="policeReport">Upload Police Report</label>
+                            <input type="file" class="form-control" id="policeReport" placeholder="">
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="accidentDescriptions">Accident Descriptions</label>
+                            <textarea type="text" class="form-control" id="accidentDescriptions" rows="4" cols="50" placeholder="Type your descriptions here"></textarea>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 mb-2">
+                                <button type="button" class="btn btn-secondary btn-lg btn-block">Back</button>
+                            </div>
+                            <div class="col-md-5 mb-2">
+                                <button type="button" class="btn btn-success btn-lg btn-block">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+
+<!-- External Scripts -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Customs Scripts -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>

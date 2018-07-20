@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Insurance fraud detection">
+    <meta name="keywords" content="Insurance, Fraud, Africa, Claims, Aqilee">
+
+    <title>Aqilee - Fraud Detection and Risk Assessment software for Insurers</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- External Stylesheets -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- Custom Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<!--Navigation -->
+<header class="">
+    <nav class="navbar navbar-expand-md navbar-dark bg-white fixed-top">
+        <a class="navbar-brand text-dark" href="#">
+            <img src="assets/img/aqilee.png" alt="aqilee logo" class="navbar-brand__img">
+            Aqilee
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="">
+            <div class="nav-item ml-auto">
+                <a class="nav-link secondary-color" href="index.html">Profile</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="edit_profile.html">Edit Profile</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="make_claim.html">Make Claims</a>
+            </div>
+            <div class="nav-item">
+                <a class="nav-link secondary-color" href="claims.html">My Claims</a>
+            </div>
+            <div class="nav-item">
+                <button class="btn my-2 my-sm-0">Sign Out</button>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<main role="main" class="container">
+
+    <div class="starter-template">
+        <h3>My Claims</h3>
+        <p class="">Your claims summary.</p>
+    </div>
+    <div class="pb-3 mb-0 lh-125">
+        <div class="row">
+            <div class="col-md-8">
+                <h5 class="mb-2">My Policies</h5>
+
+                <!--Search bar -->
+                <form class="my-3">
+                    <div class="form-row align-items-center">
+                        <div class="col-auto">
+                            <label class="sr-only" for="inlineFormInputGroup">Search Claims</label>
+                            <div class="input-group mb-2">
+                                <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Enter policy number">
+                            </div>
+                        </div>
+
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-success mb-2">Search</button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Claims Table -->
+                <div class="table-responsive">
+                    <table class="table">
+                        <thead class="thead-light">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col" colspan="">Policy No</th>
+                            <th scope="col" colspan="">Car Number</th>
+                            <th scope="col" colspan="">Claim Date</th>
+                            <th scope="col" colspan="2">Progress</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>EUJD23404</td>
+                            <td>EU 234-04</td>
+                            <td>July 24, 2018</td>
+                            <td class="text-success">paid</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>EUJD23404</td>
+                            <td>EU 234-04</td>
+                            <td>July 24, 2018</td>
+                            <td class="text-danger">pending</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>EUJD23404</td>
+                            <td>EU 234-04</td>
+                            <td>July 23, 2018</td>
+                            <td class="text-danger">pending</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">4</th>
+                            <td>EUJD23404</td>
+                            <td>EU 234-04</td>
+                            <td>July 25, 2018</td>
+                            <td class="text-success">paid</td>
+                            <td>
+                                <a href="#" class="btn btn-sm btn-outline-dark">View Details</a>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <!-- Pagination -->
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                            <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</main>
+
+
+<!-- External Scripts -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- Customs Scripts -->
+<script src="assets/js/app.js"></script>
+</body>
+</html>
