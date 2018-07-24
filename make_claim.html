@@ -59,83 +59,300 @@
     <div class="media">
         <div class="media-body pb-3 mb-0 lh-125">
             <hr class="mb-2 ">
-            <!--<div class="container">-->
+
             <div class="row">
                 <div class="col-md-8 order-md-1">
-                    <h5 class="mb-2">Claim Details</h5>
-                    <form class="">
-                        <div class="row">
-                            <div class="col-md-6 mb-2">
-                                <label for="accidentVehicle">Accident Vehicle</label>
-                                <input type="text" class="form-control" id="accidentVehicle" placeholder="" value="" required="">
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <label for="accidentDate">Accident Date</label>
-                                <input type="text" class="form-control" id="accidentDate" placeholder="" value="" required="">
-                            </div>
-                        </div>
 
-                        <div class="row">
-                            <div class="col-md-6 mb-2">
-                                <label for="driverName">Drivers Name</label>
-                                <input type="text" class="form-control" id="driverName" placeholder="" required="">
-                            </div>
-                            <div class="col-md-6 mb-2">
-                                <label for="driverLicense">Driver's License</label>
-                                <input type="file" class="form-control form-control-sm" id="driverLicense" placeholder="Doctor" required="">
-                            </div>
-                        </div>
+                    <form id="makeClaimForm">
+                        <!--First Form Section -->
+                        <div class="form__tab">
+                            <h5 class="mb-2">Claim Details</h5>
 
-                        <div class="row">
-
-                            <div class="col-md-6 mb-2">
-                                <label for="">Third Party Involved</label> <br>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                    <label class="form-check-label" for="inlineRadio1">Yes</label>
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <label for="accidentVehicle">Accident Vehicle</label>
+                                    <input type="text" class="form-control" id="accidentVehicle" placeholder="" value="" required="">
                                 </div>
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                    <label class="form-check-label" for="inlineRadio2">No</label>
+                                <div class="col-md-6 mb-2">
+                                    <label for="accidentDate">Accident Date</label>
+                                    <input type="text" class="form-control" id="accidentDate" placeholder="" value="" required="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <label for="driverName">Drivers Name</label>
+                                    <input type="text" class="form-control" id="driverName" placeholder="" required="">
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <label for="driverLicense">Driver's License</label>
+                                    <input type="file" class="form-control form-control-sm" id="driverLicense" placeholder="Doctor" required="">
+                                </div>
+                            </div>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-2">
+                                    <label for="">Third Party Involved</label> <br>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                        <label class="form-check-label" for="inlineRadio1">Yes</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                        <label class="form-check-label" for="inlineRadio2">No</label>
+                                    </div>
+
                                 </div>
 
                             </div>
-
-                        </div>
-                        <hr class="mb-3">
-                        <h5 class="mb-2">Accident Pictures</h5>
-                        <div class="mb-2">
-                            <label for="accidentPics">Upload Accident Pictures</label>
-                            <input type="file" class="form-control" id="accidentPics" placeholder="" required="">
-                        </div>
-                        <div class="mb-2">
-
-                            <input type="file" class="form-control" id="" placeholder="" required="">
-                        </div>
-                        <div class="mb-2">
-                            <input type="file" class="form-control" id="" placeholder="" required="">
-                        </div>
-                        <hr class="mb-3">
-                        <h5 class="mb-2">Police Report</h5>
-                        <div class="mb-2">
-                            <label for="policeReport">Upload Police Report</label>
-                            <input type="file" class="form-control" id="policeReport" placeholder="">
-                        </div>
-
-                        <div class="mb-4">
-                            <label for="accidentDescriptions">Accident Descriptions</label>
-                            <textarea type="text" class="form-control" id="accidentDescriptions" rows="4" cols="50" placeholder="Type your descriptions here"></textarea>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-md-5 mb-2">
-                                <button type="button" class="btn btn-secondary btn-lg btn-block">Back</button>
+                            <hr class="mb-3">
+                            <h6 class="mb-1">Accident Pictures</h6>
+                            <div class="mb-2">
+                                <label for="accidentPics">Upload Accident Pictures</label>
+                                <input type="file" class="form-control" id="accidentPics" placeholder="" required="">
                             </div>
-                            <div class="col-md-5 mb-2">
-                                <button type="button" class="btn btn-success btn-lg btn-block">Submit</button>
+                            <div class="mb-2">
+
+                                <input type="file" class="form-control" id="" placeholder="" required="">
                             </div>
+                            <div class="mb-2">
+                                <input type="file" class="form-control" id="" placeholder="" required="">
+                            </div>
+                            <hr class="mb-3">
+                            <h6 class="mb-1">Police Report</h6>
+                            <div class="mb-2">
+                                <label for="policeReport">Upload Police Report</label>
+                                <input type="file" class="form-control" id="policeReport" placeholder="">
+                            </div>
+
+                            <div class="mb-4">
+                                <label for="accidentDescriptions">Accident Descriptions</label>
+                                <textarea type="text" class="form-control" id="accidentDescriptions" rows="4" cols="50" placeholder="Type your descriptions here"></textarea>
+                            </div>
+
+                        </div>
+
+                        <!----------------Second form ---------------->
+                        <div class="form__tab">
+                            <!-- Second Form -->
+                            <h5 class="mb-2">Crash Information</h5>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="crashInjury">Crash Injury</label>
+                                        <select class="form-control" id="crashInjury">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="collisionManner">Manner of Collision</label>
+                                        <select class="form-control" id="collisionManner">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="crashType">Crash Type</label>
+                                        <select class="form-control" id="crashType">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="collisionManner">Involving A Pedestrian</label>
+                                        <select class="form-control" id="collisionManner">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="junction">Junction</label>
+                                        <select class="form-control" id="junction">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="roadRelationship">Relationship to Road</label>
+                                        <select class="form-control" id="roadRelationship">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="truckInvolved">Involving A Large Truck</label>
+                                        <select class="form-control" id="truckInvolved">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-3">
+
+                        </div>
+
+                        <!--------- Third Form ------------>
+                        <div class="form__tab">
+                            <h5 class="mb-2">Vehicle In Crash</h5>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="vehicleBody">Vehicle Body Type</label>
+                                        <select class="form-control" id="vehicleBody">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="speedLevel">Speed Level</label>
+                                        <select class="form-control" id="speedLevel">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="impactPoint">Initial Impact Point</label>
+                                        <select class="form-control" id="impactPoint">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="rollover">Roll Over</label>
+                                        <select class="form-control" id="rollover">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-3">
+
+                        </div>
+
+                        <!--------- Fourth Form ------------>
+                        <div class="form__tab">
+                            <h5 class="mb-2">Person Involved</h5>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="ejection">Ejection</label>
+                                        <select class="form-control" id="ejection">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="clientId">Client ID</label>
+                                        <input type="text" class="form-control" id="clientId" placeholder="00000">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="injuryType">Person Injury Type</label>
+                                        <select class="form-control" id="injuryType">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-2">
+                                    <div class="form-group">
+                                        <label for="incidentDate">Incident Date</label>
+                                        <input class="form-control" type="date" id="incidentDate" placeholder="Default input">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr class="mb-3">
+
                         </div>
                     </form>
+                    <div class="row">
+                        <div class="col-md-5 mb-2">
+                            <button type="button" id="prevBtn" onclick="nextPrev(-1)" class="btn btn-secondary btn-lg btn-block">Back</button>
+                        </div>
+                        <div class="col-md-5 mb-2">
+                            <button type="button" id="nextBtn" onclick="nextPrev(1)" class="btn btn-success btn-lg btn-block">Submit</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -149,6 +366,6 @@
 <script src="assets/js/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
 <!-- Customs Scripts -->
-<!--<script src="assets/js/app.js"></script>-->
+<script src="assets/js/make_claim.js"></script>
 </body>
 </html>

@@ -184,4 +184,8 @@ body {
 .navbar-brand__img {
   width: 50px; }
 
+/* Hide all makeClaimForm tabs by default: */
+.form__tab {
+  display: none; }
+
 /*# sourceMappingURL=style.css.map */
