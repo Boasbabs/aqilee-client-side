@@ -188,4 +188,12 @@ body {
 .form__tab {
   display: none; }
 
+.form__signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto; }
+  .form__signin .form__signin-img {
+    margin: 0 6em; }
+
 /*# sourceMappingURL=style.css.map */
